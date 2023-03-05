@@ -2,6 +2,9 @@ import { Module } from '@nestjs/common';
 import { UserModule } from './user/user.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+
+import { LocationsModule } from './utils/locations/locations.module';
+import { AuthModule } from './auth/auth.module';
 import entities from './typeorm';
 
 @Module({
@@ -22,6 +25,8 @@ import entities from './typeorm';
       }),
       inject: [ConfigService],
     }),
+    LocationsModule,
+    AuthModule,
   ],
   controllers: [],
   providers: [],
