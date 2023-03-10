@@ -2,7 +2,7 @@
 
 
 ## Description
-RESTful API for authentication and authorization made for usage in subsequent projects.
+RESTful API for authentication and authorization. It only allows people in the USA to register based on their geo-location.
 ## Installation
 
 ```bash
